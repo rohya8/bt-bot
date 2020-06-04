@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/rohya8/bt-bot/issues"
   },
-  "homepage": "https://github.com/rohya8/bt-bot#readme"
+  "homepage": "https://github.com/rohya8/bt-bot#readme",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
 }
