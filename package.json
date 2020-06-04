@@ -1,0 +1,28 @@
+{
+  "name": "bt-bot",
+  "version": "1.0.0",
+  "description": "Brain Tickler Bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohya8/bt-bot.git"
+  },
+  "keywords": [
+    "bot",
+    "twitter",
+    "comdey",
+    "funny",
+    "braintickler",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Rohit Wadke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rohya8/bt-bot/issues"
+  },
+  "homepage": "https://github.com/rohya8/bt-bot#readme"
+}
