@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/rohya8/bt-bot#readme",
   "dependencies": {
+    "axios": "^0.19.2",
+    "heroku-cli": "^7.0.9",
     "twit": "^2.2.11"
   }
 }
