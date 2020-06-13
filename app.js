@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(db);
 app.use('/user',userRouter); */
 
-app.get('/helloWorld',(req,res){
+app.get('/helloWorld',(req,res) => {
 res.send('Hellowrold');
 });
 app.listen(process.env.PORT, '0.0.0.0' | 2000,() => console.log('Started server at 2000'));
