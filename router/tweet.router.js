@@ -4,4 +4,4 @@ const tweetcontroller = require('../controller/tweet.controller');
 
 router.get('/sendTweet', tweetcontroller.sendTweet);
 
-module.exports.userRouter = router;
+module.exports.tweetController = router;
