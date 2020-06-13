@@ -24,7 +24,7 @@ function tweetPost(msg) {
 function retrieveJoke() {
     try {
         getJoke();
-        setTimeout(retrieveJoke, 3600000);
+        // setTimeout(retrieveJoke, 3600000);
         // setTimeout(retrieveJoke, 1000 * 60 * 10);
     } catch (err) {
         console.log(err);

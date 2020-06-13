@@ -2,10 +2,9 @@
   "name": "bt-bot",
   "version": "1.0.0",
   "description": "Brain Tickler Bot",
-  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bot.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +27,8 @@
   "homepage": "https://github.com/rohya8/bt-bot#readme",
   "dependencies": {
     "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "heroku-cli": "^7.0.9",
     "twit": "^2.2.11"
   }
