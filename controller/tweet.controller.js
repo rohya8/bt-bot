@@ -12,13 +12,12 @@ module.exports.sendTweet = async (req, res, next) => {
     }).then(function (response) {
         // success
         if (response && response.data && response.data.joke && response.data.joke.length < 242) {
-            response.data.joke += ' #joke #lmao #memesdaily #braintickler';
+            response.data.joke += '#humor #memesdaily #rofl #jokeoftheday';
             tweetPost(response.data.joke);
             res.status(200).send("Success");
         }
     })
         .catch(function (error) {
-            // handle error
             console.log(error);
             res.status(200).send(error);
         });
