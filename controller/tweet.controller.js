@@ -12,8 +12,19 @@ module.exports.sendTweet = async (req, res, next) => {
     }).then(function (response) {
         // success
         if (response && response.data && response.data.joke && response.data.joke.length < 242) {
-            response.data.joke += '#humor #memesdaily #rofl #jokeoftheday';
-            tweetPost(response.data.joke);
+            response.data.joke += ' #humor #memesdaily #rofl #jokeoftheday';
+            if (response.data.joke.length < 263) {
+                var str = 'JOKE OF THE DAY : ' + response.data.joke;
+                if (str.length < 238) {
+                    str += ' #funny #lol #lmao #happy';
+                    if (str.length < 207) {
+                        str += ' #followme #love #likeall #joke';
+                    }
+                }
+                tweetPost(str);
+            } else {
+                tweetPost(response.data.joke);
+            }
             res.status(200).send("Success");
         }
     })
